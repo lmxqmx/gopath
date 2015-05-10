@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <title>cta.js Demo01</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="demo01.css"/>
+</head>
+<body>
+
+<h1 class="main-title">cta.js</h1>
+<p>
+    cta.js or "Call to Animation" is a light-weight performant library to animate your "action-to-effect" paths.
+</p>
+
+<a href="https://github.com/chinchang/cta.js#installation" title="Off to Github" class="btn  download-btn">Get started</a>
+
+<section class="section--white" style="margin-top: 40px;">
+    <h2>What can I use it for?</h2>
+    <p>Navigation in tile based apps</p>
+    <small>Click any tile below</small>
+    <div class="tile-container">
+        <div class="tile" data-cta-target=".js-modal-1"></div>
+        <div class="tile" data-cta-target=".js-modal-2"></div>
+        <div class="tile" data-cta-target=".js-modal-3"></div>
+        <div class="tile" data-cta-target=".js-modal-4"></div>
+        <div class="tile" data-cta-target=".js-modal-5" style="width: 16.666%"></div>
+        <div class="tile" data-cta-target=".js-modal-3"></div>
+        <div class="tile" data-cta-target=".js-modal-5" style="width: 16.666%"></div>
+    </div>
+</section>
+
+<section class="section--white">
+    <p>Opening modals on button clicks</p>
+    <div class="btn" data-cta-target=".js-dialog" style="background: #4A90E2">Click for awesomeness</div>
+</section>
+
+<section class="section--white">
+    <p>Opening sidebars</p>
+    <div class="btn" data-cta-target=".js-sidebar">Open the Sidebar</div>
+</section>
+<section class="section--white">
+    <p>And just about anything...imagination is the limit</p>
+</section>
+
+
+<section>
+    <h2>And why do I use it?</h2>
+    <p>To improve your user experience by providing <strong>visual continuity</strong>.</p>
+    <div class="quote-box">
+        <div class="quote-box__bubble">Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure, avoid confusion when layouts change or elements are rearranged, and improve the overall beauty of the experience.</div>
+        <a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html">Google Material Design</a>
+    </div>
+</section>
+
+<section class="section--white">
+    <h2>Browser Support</h2>
+
+    <div class="content-wrap">
+        cta.js currently works only in Google Chrome browser. Other modern browsers are to be supported next.
+        <br><br>
+        For all non-supported browsers, the library does nothing and fallbacks to normal behavior without any explicit handling in your code.
+    </div>
+</section>
+
+<div class="js-modal-1  modal  modal--1">
+    <span class="modal-close-btn"></span>
+    <h1>Visual Continuity</h1>
+
+    <div class="quote-box">
+        <div class="quote-box__bubble">Transitioning between two visual states should be clear, smooth and effortless and not confuse the user. A well-designed transition does the heavy lifting and enables the user to clearly understand where their attention should be focused.</div>
+        <a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html#meaningful-transitions-visual-continuity">Google Material design</a>
+    </div>
+</div>
+<div class="js-modal-2  modal  modal--2">
+    <span class="modal-close-btn"></span>
+    <h1>Share it if you like it</h1>
+    <br><br>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-via="chinchang457" data-related="chinchang457" data-hashtags="animate,javascript">Tweet</a>
+</div>
+<div class="js-modal-3  modal  modal--3">
+    <span class="modal-close-btn"></span>
+    <h1>Customary cat!</h1>
+    <img src="img/cat.jpg" width="300" alt="">
+    <p>You found me :)</p>
+</div>
+<div class="js-modal-4  modal  modal--4">
+    <span class="modal-close-btn"></span>
+
+    <h1>Hierarchical timing</h1>
+    <div class="quote-box">
+        <div class="quote-box__bubble">When building a transition, consider the order and timing of the elements' movement. Ensure that motion supports the information hierarchy, conveying what content is most important by creating a path for the eye to follow.</div>
+        <a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html#meaningful-transitions-hierarchical-timing">Google Material design</a>
+    </div>
+</div>
+<div class="js-modal-5  modal  modal--5">
+    <span class="modal-close-btn"></span>
+
+    <h1>Consistent choreography</h1>
+    <div class="quote-box">
+        <div class="quote-box__bubble">A well-choreographed app also provides teachable moments. When transitioning elements are coordinated, the user's understanding of the app grows. They "get" the app; they don't feel disoriented by the animation.</div>
+        <a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html#meaningful-transitions-consistent-choreography">Google Material design</a>
+    </div>
+</div>
+
+<div class="js-dialog  modal  dialog" style="text-align: center;">
+    <span class="modal-close-btn"></span>
+    <h3>Do you think this is Awesome?</h3>
+    <br>
+    <a onclick="closeShowingModal(); return;" class="btn  btn--blue">Yes</a>
+    <a onclick="closeShowingModal(); return;" class="btn  btn--blue">No</a>
+
+</div>
+
+<div class="js-sidebar  modal sidebar">
+    <span class="modal-close-btn"></span>
+    <div class="sidebar__block" style="height:20%"></div>
+    <div class="sidebar__block" style="height:40%"></div>
+    <div class="sidebar__block" style="height:10%"></div>
+</div>
+
+<footer>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-via="chinchang457" data-related="chinchang457" data-hashtags="animate,javascript">Tweet</a>
+
+    <div class="footer-text">By <a href="https://twitter.com/chinchang457">Kushagra Gour</a> • <a href="https://github.com/chinchang/cta.js">Source</a> • Made with JavaScript in India.</div>
+</footer>
+
+<a class="github-ribbon" href="https://github.com/chinchang/cta.js"><img style="position: fixed; top: 0; right: 0; border: 0;" src="img/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+
+
+<script src="../../libs/cta/cta.js"></script>
+<script src="demo01.js"></script>
+</body>
+</html>

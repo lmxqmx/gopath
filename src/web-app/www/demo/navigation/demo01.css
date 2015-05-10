@@ -1,0 +1,129 @@
+
+body {
+    padding: 20px;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    width: 700px;
+}
+.container::before, .container::after {
+    content: "";
+    display: table;
+}
+.container::after {
+    clear: both;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.nav {
+    margin-bottom: 48px;
+}
+.nav ul {
+    background: none repeat scroll 0 0 #333;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.nav ul::before, .nav ul::after {
+    content: "";
+    display: table;
+}
+.nav ul::after {
+    clear: both;
+}
+.nav ul > li {
+    float: left;
+    position: relative;
+}
+.nav a {
+    border-left: 1px solid #595959;
+    color: #fff;
+    display: block;
+    line-height: 1.2em;
+    padding: 10px 20px;
+}
+.nav a:hover {
+    background: none repeat scroll 0 0 #595959;
+    text-decoration: none;
+}
+.nav li ul {
+    background: none repeat scroll 0 0 #273754;
+}
+.nav li ul li {
+    width: 200px;
+}
+.nav li ul a {
+    border: medium none;
+}
+.nav li ul a:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+}
+.nav1 ul > li:hover ul {
+    left: 0;
+}
+.nav1 li ul {
+    left: -9999em;
+    position: absolute;
+    top: 36px;
+    z-index: 1;
+}
+.nav2 ul > li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+.nav2 li ul {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 36px;
+    transition: all 200ms ease 0s;
+    visibility: hidden;
+    z-index: 1;
+}
+.nav3 ul > li:hover ul li {
+    height: 36px;
+}
+.nav3 li ul {
+    left: 0;
+    position: absolute;
+    top: 36px;
+    z-index: 1;
+}
+.nav3 li ul li {
+    height: 0;
+    overflow: hidden;
+    transition: height 200ms ease-in 0s;
+}
+.nav4 ul > li:hover ul li {
+    max-height: 150px;
+}
+.nav4 li ul {
+    left: 0;
+    position: absolute;
+    top: 36px;
+    z-index: 1;
+}
+.nav4 li ul li {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms ease 0s;
+}
+.nav5 ul > li:hover ul {
+    max-height: 1000px;
+}
+.nav5 li ul {
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 36px;
+    transition: all 350ms ease 0s;
+    z-index: 1;
+}
