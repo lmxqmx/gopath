@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<input type="button" value="Animate" onclick=
+        "document.getElementById('ball').className='roll'">
+<input type="button" value="Pause" onclick=
+        "document.getElementById('ball').style.webkitAnimationPlayState='paused';">
+<input type="button" value="Continue" onclick=
+        "document.getElementById('ball').style.webkitAnimationPlayState='running';">
+<p>
+<div id="ball" style="position:absolute; top: 100px; left: 10px;
+    height:100px; width:100px; border-radius:50px;
+    background:-webkit-radial-gradient(30% 30%, white, red 10%, black);">
+</div>
+</body>
+</html>

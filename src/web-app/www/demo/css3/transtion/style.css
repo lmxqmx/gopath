@@ -1,0 +1,234 @@
+#box1{
+    width: 580px;
+    padding: 9px 15px;
+    background: #ED8029;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#box1:hover{
+    background: #A7B526;
+}
+
+#box2{
+    width: 580px;
+    padding: 9px 15px;
+    background: #ED8029;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-transition: background-color 5s;
+    -moz-transition: background-color 5s;
+    -o-transition: background-color 5s;
+    -ms-transition: background-color 5s;
+    transition: background-color 5s;
+}
+
+#box2:hover{
+    background: #A7B526;
+}
+
+
+#example2 {
+    width: 520px;
+}
+
+#example2 div {
+    width: 100px;
+    margin: 5px 0;
+    padding: 5px;
+    color: white;
+    background-color: #ED8029;
+    text-align: right;
+    border-radius: 5px;
+}
+
+#example2:hover div {
+    width: 500px;
+}
+
+#example2 div.ease {
+    -webkit-transition: 3s ease;
+    -moz-transition: 3s ease;
+    -o-transition: 3s ease;
+    -ms-transition: 3s ease;
+    transition: 3s ease;
+}
+
+#example2 div.linear {
+    -webkit-transition: 3s linear;
+    -moz-transition: 3s linear;
+    -o-transition: 3s linear;
+    -ms-transition: 3s linear;
+    transition: 3s linear;
+}
+
+#example2 div.easein {
+    -webkit-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -o-transition: 3s ease-in;
+    -ms-transition: 3s ease-in;
+    transition: 3s ease-in;
+}
+
+#example2 div.easeout {
+    -webkit-transition: 3s ease-out;
+    -moz-transition: 3s ease-out;
+    -o-transition: 3s ease-out;
+    -ms-transition: 3s ease-out;
+    transition: 3s ease-out;
+}
+
+#example2 div.easeinout {
+    -webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
+    -ms-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+}
+
+#example3 {
+    width: 520px;
+}
+
+#example3 div {
+    width: 100px;
+    margin: 5px 0;
+    padding: 5px;
+    color: white;
+    background-color: #ED8029;
+    text-align: right;
+    border-radius: 5px;
+}
+
+#example3:hover div {
+    width: 500px;
+}
+
+#example3 div.no {
+    -webkit-transition: 3s linear;
+    -moz-transition: 3s linear;
+    -o-transition: 3s linear;
+    -ms-transition: 3s linear;
+    transition: 3s linear;
+}
+
+#example3 div.one {
+    -webkit-transition: 3s linear 1s;
+    -moz-transition: 3s linear 1s;
+    -o-transition: 3s linear 1s;
+    -ms-transition: 3s linear 1s;
+    transition: 3s linear 1s;
+}
+
+#example3 div.two {
+    -webkit-transition: 3s linear 2s;
+    -moz-transition: 3s linear 2s;
+    -o-transition: 3s linear 2s;
+    -ms-transition: 3s linear 2s;
+    transition: 3s linear 2s;
+}
+
+#example3 div.three {
+    -webkit-transition: 3s linear 3s;
+    -moz-transition: 3s linear 3s;
+    -o-transition: 3s linear 3s;
+    -ms-transition: 3s linear 3s;
+    transition: 3s linear 3s;
+}
+
+#example3 div.five {
+    -webkit-transition: 3s linear 5s;
+    -moz-transition: 3s linear 5s;
+    -o-transition: 3s linear 5s;
+    -ms-transition: 3s linear 5s;
+    transition: 3s linear 5s;
+}
+
+#example3 div.minustwo {
+    -webkit-transition: 3s linear -2s;
+    -moz-transition: 3s linear -2s;
+    -o-transition: 3s linear -2s;
+    -ms-transition: 3s linear -2s;
+    transition: 3s linear -2s;
+}
+
+input#exampletransitiond {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    -webkit-transition: 3s linear;
+    -moz-transition: 3s linear;
+    -o-transition: 3s linear;
+    -ms-transition: 3s linear;
+    transition: 3s linear;
+}
+input#exampletransitiond:focus {
+    width: 300px;
+    background-color: #E7FBF8;
+    outline: none;
+    -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: inset inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+div.exampletransitione {
+    width: 500px;
+    height: 60px;
+    margin: 20px 0;
+}
+div.exampletransitione div.transition {
+    width: 20px;
+    height: 20px;
+    background-color: #ED8029;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 0;
+    -webkit-transition: 3s linear;
+    -moz-transition: 3s linear;
+    -o-transition: 3s linear;
+    -ms-transition: 3s linear;
+    transition: 3s linear;
+}
+div.exampletransitione:hover div.transition {
+    width: 50px;
+    height: 50px;
+    margin-left: 400px;
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+    -moz-box-shadow: -5px -5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px #888;
+    box-shadow: -5px -5px 5px #888;
+}
+
+div.exampletransitionf {
+    width: 500px;
+    height: 60px;
+    margin: 20px 0;
+}
+div.exampletransitionf div.transition {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 0;
+    -webkit-transition: margin-left 3s linear, background-color 2s ease 3s;
+    -moz-transition: margin-left 3s linear, background-color 2s ease 3s;
+    -o-transition: margin-left 3s linear, background-color 2s ease 3s;
+    -ms-transition: margin-left 3s linear, background-color 2s ease 3s;
+    transition: margin-left 3s linear, background-color 2s ease 3s;
+}
+div.exampletransitionf:hover div.transition {
+    margin-left: 400px;
+    background-color: green;
+}
+

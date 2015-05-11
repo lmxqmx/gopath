@@ -1,0 +1,22 @@
+@-webkit-keyframes moveX {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 600px;
+    }
+}
+
+@-webkit-keyframes moveY {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 400px;
+    }
+}
+
+.roll {
+    -webkit-animation: moveX 1.5s linear 0s infinite alternate,
+    moveY 2.4s linear 0s infinite alternate;
+}
