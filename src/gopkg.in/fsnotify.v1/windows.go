@@ -417,15 +417,15 @@ func (w *Watcher) readEvents() {
 		}
 
 		switch e {
-		case syscall.ERROR_MORE_DATA:
-			if watch == nil {
-				w.Errors <- errors.New("ERROR_MORE_DATA has unexpectedly null lpOverlapped buffer")
-			} else {
-				// The i/o succeeded but the buffer is full.
-				// In theory we should be building up a full packet.
-				// In practice we can get away with just carrying on.
-				n = uint32(unsafe.Sizeof(watch.buf))
-			}
+		//		case syscall.ERROR_MORE_DATA:
+		//			if watch == nil {
+		//				w.Errors <- errors.New("ERROR_MORE_DATA has unexpectedly null lpOverlapped buffer")
+		//			} else {
+		//				// The i/o succeeded but the buffer is full.
+		//				// In theory we should be building up a full packet.
+		//				// In practice we can get away with just carrying on.
+		//				n = uint32(unsafe.Sizeof(watch.buf))
+		//			}
 		case syscall.ERROR_ACCESS_DENIED:
 			// Watched directory was probably removed
 			w.sendEvent(watch.path, watch.mask&sys_FS_DELETE_SELF)
